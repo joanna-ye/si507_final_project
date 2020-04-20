@@ -84,7 +84,7 @@ def see_ingredient(url, cache_dict):
     if url in cache_dict.keys():
         print("Using cache")
         soup = BeautifulSoup(cache_dict[url], 'html.parser')
-        # print_recipe_list(soup)
+        # print_ingredient_list(soup)
     else:
         print("Fetching")
         response = requests.get(url)
@@ -92,7 +92,7 @@ def see_ingredient(url, cache_dict):
         cache_dict[url] = html_text
         save_cache(cache_dict)
         soup = BeautifulSoup(html_text, 'html.parser')
-        # print_recipe_list(soup)
+        # print_ingredient_list(soup)
 
 def print_ingredient(soup):
     pass
