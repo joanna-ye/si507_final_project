@@ -12,7 +12,7 @@
 ```
 git clone https://github.com/joanna-ye/si507_final_project.git
 cd si507_final_project
-python final_project_joanna_ye.py
+python3 final_project_joanna_ye.py
 ```
 
 The database "recipe.sqlite" will be created as the program runs
